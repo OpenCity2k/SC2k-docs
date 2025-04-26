@@ -291,13 +291,13 @@ Citizens demand services at certain points. Unless otherwise noted, population c
 
 ### Windows 95
 
-1. `fund`
-2. `cass`
-3. `iamacheat`
-4. `noah`
-5. `newhouse`
-6. `priscilla`
-7. `gilmartin`
-8. `joke`
+0. `fund`
+1. `cass`
+2. `iamacheat`
+3. `noah`
+4. `newhouse`
+5. `priscilla`
+6. `gilmartin`
+7. `joke`
 
 - `newhouse` doesn't work, because when 'n' is typed, the game starts looking for noah, and never reaches this.
