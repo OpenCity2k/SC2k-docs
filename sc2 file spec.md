@@ -145,7 +145,7 @@ Miscellaneous city data, 4B/32b integers:
 | 0FA0 | Ordinances flags | Bit flags for which of the 20 ordinances are enacted. 00000000:none, 000fffff:20. First ordinances (finance) section are rightmost bits. |
 | 0FA4 | unemployed | Unknown |
 | 0FA8 .. 0FE4 | Military Count | 16x2B count of military tiles. See [Military Tile Count](#military-tile-count-details) section. |
-| 0FE8 | Subway Count | Unknown |
+| 0FE8 | Subway Count | Count of underground subway tiles. |
 | 0FEC | Speed | Speed setting: 1=paused, 2=Turtle, 3=Llama, 4=Cheetah, 5=African Swallow |
 | 0FF0 | Auto Budget | Auto budget setting. |
 | 0FF4 | Auto Goto | Auto goto setting. |
@@ -916,7 +916,7 @@ Basic structure for a chunk seems to be:
 | 02 | Seems to be a modifier, for id=9, this seems to turn the boat into nessie |
 | 03 | tile x coordinate |
 | 04 | tile y coordinate |
-| 05 | tile x height (how far above the ground is this, for plane/helicopter) |
+| 05 | tile z height (how far above the ground is this, for plane/helicopter) |
 | 06 | "px", unknown |
 | 07 | "py", unknown |
 | 08 | "dx", unknown |
@@ -936,8 +936,8 @@ Basic structure for a chunk seems to be:
 0x9: Sailboat\
 0xA: Train (seems to be front of the train)\
 0xB: Train (seems to be for the other two train cars.)\
-0xC: Unknown\
-0xD: Unknown\
+0xC: Seems related to a train in a subway tunnel.\
+0xD: Seems related to a train in a subway tunnel.\
 0xE: Military Deploy\
 0xF: tornado
 

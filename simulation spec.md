@@ -17,6 +17,7 @@ The simulation is initialized with several values:
 - National tax rate always starts at 1.
 - The national trend (whose effects are currently unknown) is the difficulty value - 1.
 - Difficulty:
+  - Difficulty affects industrial demand somehow, by a likely small amount.
   1. starting funds: $20,000.
   2. starting funds: $10,000.
   3. starting funds: $10,000. This is a bond at 3% interest.
@@ -276,12 +277,13 @@ Citizens demand services at certain points. Unless otherwise noted, population c
 - More power capacity is needed if utilization reaches 98%.
 - Churches are automatically built every 2,500 sims, but only replace an existing 2x2 residential building.
 - Residential recreation demand only crops up after 10,000 population.
-  - A marina increases the residential demand cap by 9,000 total.
-  - A big park increases the residential demand cap by 3,000.
-  - Zoos and stadiums each increase the residential demand cap by 16,000.
+  - Each tile of a recreation building increases the demand cap by 1,000 (except the large park, which is 1,000/3).
+    - A marina increases the residential demand cap by 9,000 total.
+    - A big park increases the residential demand cap by 3,000 total.
+    - Zoos and stadiums each increase the residential demand cap by 16,000 total.
 - Airport demand is every 10,000 commercial population (potentially only the runway cross counts).
 - A road connection satisfied 2,000 commercial population demand.
-- Seaport demand is every 10,000 industrial population (only the pier counts).
+- Seaport demand is every 10,000 industrial population (only the crane counts).
 - A rail connection also satisfies 10,000 industrial population.
 - A highway connection also satisfies 10,000 industrial population.
 
@@ -296,3 +298,4 @@ Citizens demand services at certain points. Unless otherwise noted, population c
 - `fund`
 - `newhouse`
   - The above cheat doesn't work, because when 'n' is typed, the game starts looking for noah, and never reaches this.
+  - `mrsoleary` - Starts a firestorm disaster.
