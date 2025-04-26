@@ -289,13 +289,16 @@ Citizens demand services at certain points. Unless otherwise noted, population c
 
 ## Cheats
 
-- `joke`
-- `gilmartin`
-- `priscilla`
-- `noah`
-- `iamacheat`
-- `cass`
-- `fund`
+### Windows 95
+
+1. `fund`
+2. `cass`
+3. `iamacheat`
+4. `noah`
+5. `mrsoleary`
+6. `priscilla`
+7. `gilmartin`
+8. `joke`
+
 - `newhouse`
-  - The above cheat doesn't work, because when 'n' is typed, the game starts looking for noah, and never reaches this.
-  - `mrsoleary` - Starts a firestorm disaster.
+  - The above cheat doesn't appear implemented, but was likely intended to start a firestorm disaster.
